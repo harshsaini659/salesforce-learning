@@ -100,3 +100,21 @@ The main types of operators in Apex are:
 - for each loop
 
 ---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
