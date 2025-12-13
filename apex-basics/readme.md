@@ -30,3 +30,50 @@ a = 'test';      // error
 - It cannot change the standard SFDC functionality but can be used to stop its execution or to add new functionality.
 - It cannot by used to create a temporary files.
 - It cannot create multiple threads.
+
+---
+## What is Variables in Apex ?
+Variable is just a name of the memory location where Data is store.
+
+```
+Datatype variableName;
+String name;
+```
+
+## What is Datatype and their type in Apex ?
+A datatype defines the type of data that a variable can store.
+
+Apex has four main types of datatypes:
+- Primitive
+- sObject
+- Collection
+- Enum
+
+## What are primitive datatypes in Apex?
+Primitive datatypes are basic datatypes used to store simple values.
+- Integer
+- String
+- Boolean
+- Decimal
+- Date
+- Datetime
+- Id
+
+## What is null in Apex?
+Null means a variable does not have any value assigned to it.
+
+## What is the default value of a variable in Apex?
+If a variable is not initialized, Apex assigns a default value such as 0 for numbers, false for Boolean, and null for objects,null for Strings.
+
+## Difference between static and non-static variables?
+Static variables belong to the class and share a single copy, while non-static variables belong to an object.
+```
+public class Demo {
+    static Integer count = 0;
+    Integer number = 10;
+}
+```
+## What is a final variable in Apex?
+A final variable is a variable whose value cannot be changed once assigned.
+
+---
