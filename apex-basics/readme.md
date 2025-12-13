@@ -7,3 +7,18 @@ we have to write down Apex.
 - To perform complex validation over multiple objects we use Apex.
 - To create webservices and email services we use Apex.
 for transactions and rollbacks we use Apex.
+
+In other Words:
+- Triggers likhne ke liye
+- Complex validation ke liye
+- Database operations (insert/update/delete) ke liye
+Example:
+- Record save hone se pehle validation
+- Email bhejna
+- Related records update karna
+
+## What is mean by Apex is strongly typed ?
+It means ki variable ka Datatype phle define karna padta hai.
+
+Integer a = 10;   // correct
+a = 'test';      // error
