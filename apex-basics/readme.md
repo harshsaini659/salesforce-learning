@@ -77,3 +77,26 @@ public class Demo {
 A final variable is a variable whose value cannot be changed once assigned.
 
 ---
+
+## What are the main types of operators in Apex?
+The main types of operators in Apex are:
+- Arithmetic Operators (+ , - , * , /)
+- Relational Operators (> < >= <= == !=)
+- Logical Operators (&&, ||, !)
+- Assignment Operators (a += 5; // a = a + 5;)
+- Ternary Operator (String result = (a > 5) ? 'Greater' : 'Smaller';)
+
+## Conditional Statements :
+- if
+- if–else
+- else–if ladder
+- nested if
+- ternary operator
+
+## Loops:
+- for loop
+- while loop
+- do while loop
+- for each loop
+
+---
