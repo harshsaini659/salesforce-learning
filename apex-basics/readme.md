@@ -20,7 +20,7 @@ Example:
 
 ## What is mean by Apex is strongly typed ?
 It means ki variable ka Datatype phle define karna padta hai.
-`
+```
 Integer a = 10;   // correct
 a = 'test';      // error
-`
+```
