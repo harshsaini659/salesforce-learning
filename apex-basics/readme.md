@@ -11,7 +11,8 @@ for transactions and rollbacks we use Apex.
 In other Words:
 - Triggers likhne ke liye
 - Complex validation ke liye
-- Database operations (insert/update/delete) ke liye
+- Database operations (insert/update/delete) ke liye.
+  
 Example:
 - Record save hone se pehle validation
 - Email bhejna
