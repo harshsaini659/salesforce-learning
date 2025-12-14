@@ -11,19 +11,21 @@ Think about a student,it has charaterstics such as name,age,email,phone no and b
 - Charaterstics are variables/properties.
 - Behaviour are methods.
 
-```
-public class Student{
-  //body of class
-}
-```
 <img width="344" height="262" alt="image" src="https://github.com/user-attachments/assets/6c11d76f-2061-48bc-966a-2483037c38df" />
-
-Classes are declared using four parts: the access modifier, the keyword "class", the class name, and the class body. The body (inside the curly braces { }Copy ), is where methods and variables of the class are defined.
 
 An access modifier is a keyword in a class or method declaration. The access modifier determines what other Apex code can see and use the class or method. Although there are other access modifiers, publicCopy is the most common. Public classes are available to all other Apex classes within your org.
 
 ## Methods in Class: 
-Learn from copy.
+Methods are defined within a class. A method describes the behaviors inherited by objects of that class. A class can have one or more methods. The Flower class has three methods (behaviors): growCopy, pollinateCopy, and wiltCopy.
+
+A method is declared (created) like this:
+
+<img width="816" height="267" alt="image" src="https://github.com/user-attachments/assets/bac47855-14b5-4dcc-99db-3548d34684fa" />
+
+
+
+
+
 
 
 
