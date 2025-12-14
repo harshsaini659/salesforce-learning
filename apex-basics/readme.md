@@ -138,6 +138,103 @@ Yes, elements can be inserted at a specific index using the `add(index, value)` 
 ```
 names.add(1, 'C');
 ```
+## How do you access elements from a List?
+```
+String firstName = names[0]; //A
+String firstName = names[1]; //C
+String firstName = names[2]; //B
+```
+## Does List allow duplicate values?
+Yes, a List allows duplicate values.
+```
+List<Integer> nums = new List<Integer>{1, 1, 2};
+```
+## How do you get the size of a List?
+```
+Integer size = names.size();
+```
+## How do you remove elements from a List?
+```
+names.remove(0); //Remove by index
+names.remove('A'); //Remove by value
+```
+## How do you iterate over a List?
+Using for-each loop (BEST PRACTICE):
+```
+for(String name : names) {
+    System.debug(name);
+}
+```
+## What is a List of sObjects?
+A List of sObjects is used to store multiple Salesforce records of the same object type.
+```
+List<Account> accList = new List<Account>();
+```
+## Learning about some Important points which we may cover later in this document but right now we have to understand some terms:
+- Governor Limits: It means rules which is apply on salesforce apex code. Rules are like kitni bar database call kar sakte hai, kitna CPU use kar sakte ho, kitni data memory me rakh sakte ho etc.
+Or agar limit cross hui to runtime exception hoga.
+- Salesforce is a shared cloud platform, many users and orgs works on a single server. Agar koi banda ek requset main system ko hang na karde to isi liye ek protection create karte hai ussi ko governor limits bolte hai.
+
+## List Methods :
+1. addAll() - The addAll() method is used to add all elements of one list into another list.
+```
+List<Integer> a = new List<Integer>{1, 2};
+List<Integer> b = new List<Integer>{3, 4};
+
+a.addAll(b); // a = [1,2,3,4]
+```
+
+2. contains() - The contains() method checks whether a list contains a specific value and returns a Boolean.
+```
+Boolean result = a.contains(2); // true
+Boolean result = a.contains(5); // false
+```
+
+3. isEmpty() - The isEmpty() method checks whether a list has zero elements.
+```
+if(a.isEmpty()) {
+    System.debug('List is empty');
+}
+```
+
+4. clear() - The clear() method removes all elements from a list.
+5. get() - The get() method retrieves an element at a specific index.
+```
+Integer val = a.get(0);
+```
+
+6. set() - The set() method replaces the value at a specific index.
+```
+The set() method replaces the value at a specific index.
+```
+## What is Index Out of Bounds Exception?
+This exception occurs when you try to access an index that does not exist in the list.
+```
+a.get(10); //Exception
+```
+How to avoid 
+```
+if(index < a.size()) {
+    a.get(index);  
+}
+```
+## Governor limits related to Lists?
+Collections consume heap memory.
+Apex limits the amount of heap memory used by collections. Very large lists can cause heap size exceptions.
+- (Heap deep dive later.)
+
+## Real-world use case of List?
+Lists are commonly used to:
+- Store query results
+- Perform bulk DML operations
+- Process records in triggers
+
+
+
+
+
+
+
 
 
 
