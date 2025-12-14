@@ -117,11 +117,27 @@ List<Integer> numbers;
 `Integer = datatype`
 `numbers = variable name`
 
-
-
-
-
-
+## How do you create an empty List?
+```
+List<String> names = new List<String>();
+```
+## How do you declare and initialize a List together?
+```
+List<String> cities = new List<String>{'Delhi', 'Mumbai', 'Pune'};
+```
+## Is List dynamic in Apex?
+Yes, Lists in Apex are dynamic, meaning their size can grow or shrink at runtime and can add/delete values at runtime.List does not have a fixed size.
+## How do you add elements to a List?
+```
+List<String> names = new List<String>();
+names.add('A');
+names.add('B');
+```
+## Can we insert an element in the middle of a List?
+Yes, elements can be inserted at a specific index using the `add(index, value)` method.
+```
+names.add(1, 'C');
+```
 
 
 
