@@ -6,7 +6,7 @@ Apex allow us to write the code that executes on the force.com platform. Apex is
 we have to write down Apex.
 - To perform complex validation over multiple objects we use Apex.
 - To create webservices and email services we use Apex.
-for transactions and rollbacks we use Apex.
+- For transactions and rollbacks we use Apex.
 
 In other Words:
 - Triggers likhne ke liye
@@ -28,7 +28,7 @@ a = 'test';      // error
 ## Features not supported by Apex ?
 - If we want to showcase anything into the UI then we need to use point-click tools,visual force,lightning.No UI element can be shown with the help Apex Other than the error message. Apex lies on to the controller part of the MVC Architecture it doesnt lie on to the view part (UI).
 - It cannot change the standard SFDC functionality but can be used to stop its execution or to add new functionality.
-- It cannot by used to create a temporary files.
+- It cannot be used to create a temporary files.
 - It cannot create multiple threads.
 
 ---
