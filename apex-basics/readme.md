@@ -101,13 +101,21 @@ The main types of operators in Apex are:
 
 ---
 
+## What is a collection in Apex ?
+A collection  is a data structure that can store multiple values of the same datatype in a single variable.
+In simple words Collection allows you to handle multiple records or value together.
 
+3 types of Collections in Apex :
+- List: A List is an ordered collection that allows duplicate values and is accessed using index.
 
+## How do you declare a List in Apex?
+```
+List<Integer> numbers;
 
-
-
-
-
+```
+`List = collection type
+Integer = datatype
+numbers = variable name`
 
 
 
