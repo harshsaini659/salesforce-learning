@@ -113,9 +113,9 @@ In simple words Collection allows you to handle multiple records or value togeth
 List<Integer> numbers;
 
 ```
-`List = collection type
-Integer = datatype
-numbers = variable name`
+`List = collection type`
+`Integer = datatype`
+`numbers = variable name`
 
 
 
