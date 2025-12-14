@@ -106,7 +106,7 @@ A collection  is a data structure that can store multiple values of the same dat
 In simple words Collection allows you to handle multiple records or value together.
 
 3 types of Collections in Apex :
-- List: A List is an ordered collection that allows duplicate values and is accessed using index.
+-- List: A List is an ordered collection that allows duplicate values and is accessed using index.
 
 ## How do you declare a List in Apex?
 ```
@@ -170,7 +170,7 @@ A List of sObjects is used to store multiple Salesforce records of the same obje
 ```
 List<Account> accList = new List<Account>();
 ```
-## Learning about some Important points which we may cover later in this document but right now we have to understand some terms:
+## Understand about some Important points which we may cover later in this document but right now we have to understand some terms:
 - Governor Limits: It means rules which is apply on salesforce apex code. Rules are like kitni bar database call kar sakte hai, kitna CPU use kar sakte ho, kitni data memory me rakh sakte ho etc.
 Or agar limit cross hui to runtime exception hoga.
 - Salesforce is a shared cloud platform, many users and orgs works on a single server. Agar koi banda ek requset main system ko hang na karde to isi liye ek protection create karte hai ussi ko governor limits bolte hai.
@@ -228,6 +228,8 @@ Lists are commonly used to:
 - Store query results
 - Perform bulk DML operations
 - Process records in triggers
+
+-- Set:
 
 
 
