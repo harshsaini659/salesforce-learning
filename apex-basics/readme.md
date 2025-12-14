@@ -106,7 +106,7 @@ A collection  is a data structure that can store multiple values of the same dat
 In simple words Collection allows you to handle multiple records or value together.
 
 3 types of Collections in Apex :
--- List: A List is an ordered collection that allows duplicate values and is accessed using index.
+- List: A List is an ordered collection that allows duplicate values and is accessed using index.
 
 ## How do you declare a List in Apex?
 ```
@@ -229,7 +229,7 @@ Lists are commonly used to:
 - Perform bulk DML operations
 - Process records in triggers
 
--- Set:
+- Set:
 
 
 
