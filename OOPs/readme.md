@@ -59,13 +59,45 @@ public static Integer wilt(Integer numberOfPetals){
 ```
 ---
 ## Object in Apex:
+An object is an instance of a class that contains actual values and can access the properties and methods defined in the class.(Object class ka ek real instance hota hai jo class ki properties aur methods ko use karta hai.)
 
+## Constructor method:
+A constructor is a special method of a class that is automatically called when an object of the class is created.
+It is used to initialize the object with initial values.
+```
+public class Flower {
+    String color;
 
+    // Constructor
+    public Flower() {
+        color = 'Red';
+    }
+}
 
+Flower f = new Flower();
+System.debug(f.color); // Red
+```
+Parameterized constructor :
+```
+public class Flower {
+    String color;
 
+    public Flower(String c) {
+        color = c;
+    }
+}
+Flower f1 = new Flower('Red');
+Flower f2 = new Flower('Yellow');
 
+```
+## Q1. Agar properties ke saath hi default value set kar dein, to constructor kyu chahiye?
+Agar sab objects ke liye same default value chahiye ho, to constructor optional hota hai.
+Constructor tab use hota hai jab object ko dynamic values deni ho, calculation ya validation karni ho.
 
-
+## Q2. Constructor static method ke saath kyu use nahi hota?
+Constructor object creation ke time call hota hai.
+Static methods class level ke hote hain aur object create nahi karte.
+Isliye constructor sirf objects ke saath hota hai, static methods ke saath nahi.
 
 
 
