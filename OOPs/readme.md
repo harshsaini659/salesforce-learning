@@ -38,6 +38,27 @@ flower.testCall();          //indirect call
 flower.wilt(4);             //direct call
 ```
 
+## Return Type
+The return type is a specific data type, such as Boolean, String, or Account, or it can be void (nothing), like this:
+```
+public static void wilt(Integer numberOfPetals){
+    system.debug(numberOfPetals);
+}
+```
+When the method return type is voidCopy, the method does not return a value. To return a value, replace voidCopy with a different return type.
+For example, here, the wiltCopy method expects a returnCopy (response) value that's an integer.
+<img width="616" height="178" alt="image" src="https://github.com/user-attachments/assets/7c282991-82d0-433b-b6e8-c9721ce43237" />
+
+```
+public static Integer wilt(Integer numberOfPetals){
+    if(numberOfPetals >= 1){
+        numberOfPetals--;
+    }
+    return numberOfPetals;       //return value is comming here. 
+}
+```
+
+
 
 
 
