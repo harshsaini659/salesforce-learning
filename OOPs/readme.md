@@ -22,8 +22,21 @@ A method is declared (created) like this:
 
 <img width="816" height="267" alt="image" src="https://github.com/user-attachments/assets/bac47855-14b5-4dcc-99db-3548d34684fa" />
 
+Example:
+```
+public class flower{
+  public static void wilt(Integer numberOfPetals){    //method 1
+      system.debug(numberOfPetals);
+  }
 
+  public static void testCall(){               //method 2
+      wilt(4);
+  }
+}
 
+flower.testCall();          //indirect call
+flower.wilt(4);             //direct call
+```
 
 
 
