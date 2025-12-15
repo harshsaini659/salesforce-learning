@@ -99,6 +99,86 @@ Constructor object creation ke time call hota hai.
 Static methods class level ke hote hain aur object create nahi karte.
 Isliye constructor sirf objects ke saath hota hai, static methods ke saath nahi.
 
+## Static vs Instance (Non-Static) Variables & Methods — Apex OOPs
+Static = class ke saath juda hua
+Instance (non-static) = object ke saath juda hua
+
+## Q1. What is Instance variable ?
+Instance variable wo hota hai jo har object ke liye alag-alag hota hai.
+```
+public class Flower {
+    String color;   // instance variable
+}
+
+Flower f1 = new Flower();
+Flower f2 = new Flower();
+
+f1.color = 'Red';
+f2.color = 'Yellow';
+
+```
+## Q2. What is Static variable ?
+Static variable poori class ke liye ek hi hota hai. Sab objects usi ek value ko share karte hain.
+```
+public class Flower {
+    static Integer count = 0;
+}
+Flower f1 = new Flower();
+Flower f2 = new Flower();
+
+Flower.count++;
+System.debug(Flower.count); // 1
+
+Flower.count++;
+System.debug(Flower.count); // 2
+
+//ye count object ka nahi class ka hai remember
+```
+## In case of method:
+## Instance method - 
+```
+public class Flower {
+    String color;
+
+    public void showColor() {       //non-static method
+        System.debug(color);
+    }
+}
+Flower f1 = new Flower();   //obj 1
+f1.color = 'Red';
+f1.showColor();
+Flower f2 = new Flower();   //obj 2
+f2.color = 'Red';
+f2.showColor();
+```
+
+## Static method - 
+```
+public class Flower {
+    public static void greet() {    //static method
+        System.debug('Hello');
+    }
+}
+Flower.greet();      //no need of object
+```
+
+## Q3. Why Static Methods are heavily used in Apex?
+Salesforce me static methods isliye zyada use hote hain kyunki unhe bina object banaye directly call kiya ja sakta hai.Aur Salesforce me mostly kaam class-level pe hota hai, object-level pe nahi.
+...ye question baad main or detail main samjhege abhi ke liye itna enough hai...
+
+---
+
+# INHERITANCE
+
+
+
+
+
+
+
+
+
+
 
 
 
