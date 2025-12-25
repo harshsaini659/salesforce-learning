@@ -1,4 +1,4 @@
-## What is Apex and when to use Apex ?
+  ## What is Apex and when to use Apex ?
 Apex is server-side programming and strongly typed object oriented programming language which is developed by Salesforce.com.
 Apex allow us to write the code that executes on the force.com platform. Apex is saved,compiled and executed on the servers of Force.com platform.
 - It is use to build SaaS applications on top of salesforce CRM functionality and for writing business logic.
@@ -106,7 +106,7 @@ A collection  is a data structure that can store multiple values of the same dat
 In simple words Collection allows you to handle multiple records or value together.
 
 3 types of Collections in Apex :
-1. *List*: A List is an ordered collection that allows duplicate values and is accessed using index.
+1. *List*: A List is an ordered collection that allows duplicate values and is accessed by using index.
 
 ## How do you declare a List in Apex?
 ```
@@ -230,7 +230,80 @@ Lists are commonly used to:
 - Process records in triggers
 
 
-2. *Set*:
+2. *Set*: A Set is a unordered collection where duplicate values are not allowed and set are unique.
+Syntax:
+```
+Set<DataType> setName = new Set<DataType>(); // syntax 1
+
+Set<Integer> marks = new Set<Integer>{10, 20, 30, 20};  // syntax 2
+System.debug(marks);
+
+```
+
+## Add Values in Set:
+```
+Set<String> names = new Set<String>();
+names.add('Amit');
+names.add('Rahul');
+names.add('Amit'); // duplicate
+
+System.debug(names);  //{Amit, Rahul}
+```
+
+## addAll() in Set:
+```
+Set<Integer> s1 = new Set<Integer>{1,2};
+Set<Integer> s2 = new Set<Integer>{3,4};
+
+s1.addAll(s2);
+System.debug(s1);   //{1,2,3,4}
+```
+
+## contains() in Set:
+```
+Set<String> cities = new Set<String>{'Delhi','Mumbai'};
+
+System.debug(cities.contains('Delhi')); // true
+System.debug(cities.contains('Pune'));  // false
+```
+
+## remove(),size(),clear().
+
+## How to iterate Set ?
+we can loop over a Set using a for-each loop. However, we cannot use index-based loops because Set does not maintain order.
+```
+Set<String> s = new Set<String>{'A','B','C'};
+
+for(String val : s){
+    System.debug(val);
+}
+```
+## Interview Important Points (Must Remember)
+
+- Set me duplicate values allowed nahi
+- Order fix nahi hota
+- Indexing possible nahi
+- contains() fast hota hai
+- Id, String, Integer, sObject sab store kar sakta hai
+- SOQL ke saath frequently use hota hai
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
