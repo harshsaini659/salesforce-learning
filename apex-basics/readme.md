@@ -287,10 +287,78 @@ for(String val : s){
 - Id, String, Integer, sObject sab store kar sakta hai
 - SOQL ke saath frequently use hota hai
 
+3. Map- Map is a collection of key–value pairs where each key is unique and is used to access its corresponding value.
+-Key unique hoti hai
+-Value duplicate ho sakti hai
+-Fast data access hota hai key ke through
 
+## Why use Map over other collections ?
+-Id ke through record access
+-Fast lookup
+-Parent–Child data handling
+-Trigger & bulk processing
 
+Syntax:
+```
+Map<KeyType, ValueType> mapName = new Map<KeyType, ValueType>();
+```
+## Declare + Initialize 
+```
+Map<String, Integer> marks = new Map<String, Integer>{
+    'Maths' => 90,
+    'English' => 80
+};
+```
+## How to add values in Map ?
+By PUT Method:
+```
+Map<Integer, String> m = new Map<Integer, String>();
+m.put(1, 'Amit');
+m.put(2, 'Rahul');
+m.put(1, 'Neha'); // overwrite
+```
+## Map important Methods:
+1. get()
+```
+System.debug(marks.get('Maths')); // 90
+```
+2.containsKey()
+```
+marks.containsKey('Maths'); // true
+```
+3.containsValue()
+```
+marks.containsValue(80); // true
+```
+4.ketSet()
+```
+Set<String> keys = marks.keySet();
+```
+5.values()
+```
+List<Integer> vals = marks.values();
+```
+6. remove,size,clear etc..
 
-
+## How to loop in Map ?
+1. By keySet() loop:
+```
+for(String key : marks.keySet()){
+    System.debug(key + ' = ' + marks.get(key));
+}
+```
+2. By values loop:
+```
+for(Integer v : marks.values()){
+    System.debug(v);
+}
+```
+## Interview Important Points:
+- Key hamesha unique hoti hai
+- Value overwrite hoti hai duplicate key pe
+- Fast lookup using key
+- Direct indexing possible nahi
+- Map loop directly nahi hota
 
 
 
