@@ -287,7 +287,7 @@ for(String val : s){
 - Id, String, Integer, sObject sab store kar sakta hai
 - SOQL ke saath frequently use hota hai
 
-3. Map- Map is a collection of key–value pairs where each key is unique and is used to access its corresponding value.
+3. *Map*- Map is a collection of key–value pairs where each key is unique and is used to access its corresponding value.
 -Key unique hoti hai
 -Value duplicate ho sakti hai
 -Fast data access hota hai key ke through
