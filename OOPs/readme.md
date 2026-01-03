@@ -168,7 +168,7 @@ Salesforce me static methods isliye zyada use hote hain kyunki unhe bina object 
 
 ---
 
-# INHERITANCE
+# Encapsulation
 
 
 
